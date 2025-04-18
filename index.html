@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpTown Barber | Premium Grooming Experience in Cape Town</title>
+    <meta name="description" content="Book premium barber services in Cape Town and Woodstock. Expert stylists, convenient online booking, and personalized grooming experiences.">
+    
+    <!-- Font & Icon Assets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-logo">
+            <svg viewBox="0 0 200 50" class="logo-svg">
+                <path class="logo-path" d="M20,10 L40,10 L40,40 L20,40 Z M60,10 L80,10 L80,25 L60,25 Z M100,10 L120,10 L120,40 L100,40 Z" />
+            </svg>
+        </div>
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- App Container -->
+    <div class="app-container">
+        <!-- Navigation Bar -->
+        <nav class="app-nav">
+            <div class="nav-container">
+                <!-- Logo & Branding -->
+                <div class="nav-brand">
+                    <svg viewBox="0 0 200 50" class="logo-svg">
+                        <path class="logo-path" d="M20,10 L40,10 L40,40 L20,40 Z M60,10 L80,10 L80,25 L60,25 Z M100,10 L120,10 L120,40 L100,40 Z" />
+                    </svg>
+                    <span class="location-badge">
+                        <i class="fas fa-map-marker-alt"></i> Cape Town, Woodstock
+                    </span>
+                </div>
+                
+                <!-- Main Navigation -->
+                <ul class="nav-menu">
+                    <li><a href="#services" class="nav-link active">Services</a></li>
+                    <li><a href="#barbers" class="nav-link">Our Barbers</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <!-- User Actions -->
+                <div class="nav-actions">
+                    <button class="btn-gift" id="gift-card-btn">
+                        <i class="fas fa-gift"></i> Gift Cards
+                    </button>
+                    <button class="btn-primary pulse" id="book-now-btn">
+                        Book Now <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                    <!-- User Profile Dropdown Trigger -->
+                    <div class="user-dropdown">
+                        <button class="user-avatar">
+                            <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="User Profile" width="40" height="40">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Precision Cuts.<br>Timeless Style.</h1>
+                <p class="hero-subtitle">Premium barbering services in the heart of Woodstock, Cape Town</p>
+                
+                <div class="hero-cta">
+                    <button class="btn-primary btn-large btn-hover-effect" id="hero-book-btn">
+                        Book Your Appointment <i class="fas fa-scissors"></i>
+                    </button>
+                    <button class="btn-outline btn-large btn-hover-effect" id="video-btn">
+                        <i class="fas fa-play"></i> Watch Our Story
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1200">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Expert Barbers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98">0</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="UpTown Barber Shop" loading="lazy">
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="section-header">
+                <h2>Our Signature Services</h2>
+                <p class="section-subtitle">Tailored grooming experiences for the modern gentleman</p>
+                
+                <div class="service-filters">
+                    <button class="filter-btn active" data-filter="all">All Services</button>
+                    <button class="filter-btn" data-filter="hair">Hair</button>
+                    <button class="filter-btn" data-filter="beard">Beard</button>
+                    <button class="filter-btn" data-filter="premium">Premium</button>
+                </div>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Premium Haircut Service -->
+                <div class="service-card premium" data-category="premium,hair">
+                    <div class="card-badge">Most Popular</div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Premium Haircut" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Signature Haircut</h3>
+                        <div class="service-meta">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-rand-sign"></i> R350</span>
+                            <span><i class="fas fa-star"></i> 4.9 (128)</span>
+                        </div>
+                        <p>A precision haircut with detailed consultation, hot towel treatment, and finishing touches with premium products.</p>
+                        
+                        <div class="card-actions">
+                            <button class="btn-primary btn-small btn-hover-effect book-service" data-service="Signature Haircut">
+                                Book Now <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="icon-btn favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beard Grooming Service -->
+                <div class="service-card" data-category="beard">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Beard Grooming" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Royal Beard Treatment</h3>
+                        <div class="service-meta">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-rand-sign"></i> R250</span>
+                            <span><i class="fas fa-star"></i> 4.8 (96)</span>
+                        </div>
+                        <p>Expert beard shaping, trimming, and conditioning with warm oils and premium beard balms.</p>
+                        
+                        <div class="card-actions">
+                            <button class="btn-primary btn-small btn-hover-effect book-service" data-service="Royal Beard Treatment">
+                                Book Now <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="icon-btn favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hot Towel Shave Service -->
+                <div class="service-card premium" data-category="premium">
+                    <div class="card-badge">Premium</div>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Hot Towel Shave" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Hot Towel Shave</h3>
+                        <div class="service-meta">
+                            <span><i class="fas fa-clock"></i> 40 min</span>
+                            <span><i class="fas fa-rand-sign"></i> R300</span>
+                            <span><i class="fas fa-star"></i> 4.7 (84)</span>
+                        </div>
+                        <p>Traditional straight razor shave with hot towels, pre-shave oil, and post-shave moisturizer for the closest shave.</p>
+                        
+                        <div class="card-actions">
+                            <button class="btn-primary btn-small btn-hover-effect book-service" data-service="Hot Towel Shave">
+                                Book Now <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="icon-btn favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kids Cut Service -->
+                <div class="service-card" data-category="hair">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Kids Haircut" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Kids Haircut</h3>
+                        <div class="service-meta">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-rand-sign"></i> R200</span>
+                            <span><i class="fas fa-star"></i> 4.9 (112)</span>
+                        </div>
+                        <p>Specialized haircut for children with a fun, comfortable experience and kid-friendly styling.</p>
+                        
+                        <div class="card-actions">
+                            <button class="btn-primary btn-small btn-hover-effect book-service" data-service="Kids Haircut">
+                                Book Now <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="icon-btn favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hair Color Service -->
+                <div class="service-card" data-category="hair">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Hair Coloring" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Hair Coloring</h3>
+                        <div class="service-meta">
+                            <span><i class="fas fa-clock"></i> 60 min</span>
+                            <span><i class="fas fa-rand-sign"></i> R450</span>
+                            <span><i class="fas fa-star"></i> 4.6 (76)</span>
+                        </div>
+                        <p>Professional hair coloring services including full color, highlights, and gray coverage.</p>
+                        
+                        <div class="card-actions">
+                            <button class="btn-primary btn-small btn-hover-effect book-service" data-service="Hair Coloring">
+                                Book Now <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="icon-btn favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Facial Treatment Service -->
+                <div class="service-card premium" data-category="premium">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Facial Treatment" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Gentleman's Facial</h3>
+                        <div class="service-meta">
+                            <span><i class="fas fa-clock"></i> 50 min</span>
+                            <span><i class="fas fa-rand-sign"></i> R400</span>
+                            <span><i class="fas fa-star"></i> 4.8 (92)</span>
+                        </div>
+                        <p>Deep cleansing facial treatment designed specifically for men's skin, with exfoliation and hydration.</p>
+                        
+                        <div class="card-actions">
+                            <button class="btn-primary btn-small btn-hover-effect book-service" data-service="Gentleman's Facial">
+                                Book Now <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="icon-btn favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn-outline btn-hover-effect">
+                    View All Services <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Barbers Section -->
+        <section class="barbers-section" id="barbers">
+            <div class="section-header">
+                <h2>Meet Our Master Barbers</h2>
+                <p class="section-subtitle">Skilled artisans dedicated to your grooming perfection</p>
+            </div>
+            
+            <div class="barbers-carousel">
+                <!-- Barber 1 -->
+                <div class="barber-card">
+                    <div class="barber-image">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Barber James" loading="lazy">
+                        <div class="barber-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="barber-info">
+                        <h3>James Wilson</h3>
+                        <p class="barber-specialty">Master Barber / Founder</p>
+                        <div class="barber-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.8 (210)</span>
+                        </div>
+                        <button class="btn-outline btn-small btn-hover-effect view-barber" data-barber="James Wilson">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Barber 2 -->
+                <div class="barber-card">
+                    <div class="barber-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Barber Michael" loading="lazy">
+                        <div class="barber-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="barber-info">
+                        <h3>Michael Rodriguez</h3>
+                        <p class="barber-specialty">Beard Specialist</p>
+                        <div class="barber-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>5.0 (187)</span>
+                        </div>
+                        <button class="btn-outline btn-small btn-hover-effect view-barber" data-barber="Michael Rodriguez">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Barber 3 -->
+                <div class="barber-card">
+                    <div class="barber-image">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Barber David" loading="lazy">
+                        <div class="barber-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="barber-info">
+                        <h3>David Johnson</h3>
+                        <p class="barber-specialty">Classic Cuts Expert</p>
+                        <div class="barber-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>5.0 (156)</span>
+                        </div>
+                        <button class="btn-outline btn-small btn-hover-effect view-barber" data-barber="David Johnson">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Barber 4 -->
+                <div class="barber-card">
+                    <div class="barber-image">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Barber Thomas" loading="lazy">
+                        <div class="barber-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="barber-info">
+                        <h3>Thomas Brown</h3>
+                        <p class="barber-specialty">Modern Styles Specialist</p>
+                        <div class="barber-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>5.0 (134)</span>
+                        </div>
+                        <button class="btn-outline btn-small btn-hover-effect view-barber" data-barber="Thomas Brown">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Barber 5 -->
+                <div class="barber-card">
+                    <div class="barber-image">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Barber Robert" loading="lazy">
+                        <div class="barber-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="barber-info">
+                        <h3>Robert Taylor</h3>
+                        <p class="barber-specialty">Traditional Barber</p>
+                        <div class="barber-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.7 (98)</span>
+                        </div>
+                        <button class="btn-outline btn-small btn-hover-effect view-barber" data-barber="Robert Taylor">
+                            View Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="section-header">
+                <h2>Our Work Gallery</h2>
+                <p class="section-subtitle">See the craftsmanship of our master barbers</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Haircut Style 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Classic Taper</h4>
+                            <p>By James Wilson</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Beard Style 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Full Beard Design</h4>
+                            <p>By Michael Rodriguez</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Haircut Style 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Modern Fade</h4>
+                            <p>By Thomas Brown</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1596704017256-8a362ce00a54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Beard Style 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Beard Sculpting</h4>
+                            <p>By Michael Rodriguez</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Haircut Style 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Textured Crop</h4>
+                            <p>By David Johnson</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Shaving Style" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Hot Towel Shave</h4>
+                            <p>By Robert Taylor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="section-header">
+                <h2>Client Experiences</h2>
+                <p class="section-subtitle">What our clients say about UpTown Barber</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">The best barber experience I've had in Cape Town. James took the time to understand exactly what I wanted and delivered beyond expectations.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Michael B." loading="lazy">
+                        <div>
+                            <h4>Michael B.</h4>
+                            <p>Regular Client</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Consistently excellent service. I've been coming here for 2 years and never had a bad cut. The atmosphere is great and the barbers are true professionals.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="David L." loading="lazy">
+                        <div>
+                            <h4>David L.</h4>
+                            <p>Monthly Client</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Michael transformed my beard from scruffy to sophisticated. The attention to detail is unmatched. Worth every rand!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Thomas K." loading="lazy">
+                        <div>
+                            <h4>Thomas K.</h4>
+                            <p>First-time Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="UpTown Barber Shop Interior" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2015 by master barber James Wilson, UpTown Barber was born from a passion for traditional barbering with a modern twist. What started as a single-chair shop in Woodstock has grown into Cape Town's premier grooming destination.</p>
+                    <p>We believe that a great haircut is more than just a service—it's an experience. Our barbers are trained in both classic techniques and contemporary styles, ensuring you leave looking and feeling your best.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <h4>5-Star Service</h4>
+                            <p>Consistently rated as Cape Town's best barber shop</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-hand-sparkles"></i>
+                            <h4>Sanitized Tools</h4>
+                            <p>All tools sterilized between clients for your safety</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-coffee"></i>
+                            <h4>Complimentary Drinks</h4>
+                            <p>Enjoy a coffee or craft beer with your service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section" id="contact">
+            <div class="location-info">
+                <h2>Visit Us in Woodstock</h2>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> 42 Station Road, Woodstock, Cape Town</p>
+                    <p><i class="fas fa-phone"></i> +27 21 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> hello@uptownbarber.co.za</p>
+                </address>
+                
+                <div class="hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 9:00 AM - 7:00 PM</li>
+                        <li>Saturday: 8:00 AM - 5:00 PM</li>
+                        <li>Sunday: 10:00 AM - 3:00 PM</li>
+                    </ul>
+                </div>
+                
+                <button class="btn-primary btn-hover-effect" id="directions-btn">
+                    Get Directions <i class="fas fa-directions"></i>
+                </button>
+            </div>
+            
+            <div class="location-map">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.123456789012!2d18.12345678901234!3d-33.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDA3JzI0LjQiUyAxOMKwMDcnMjQuNCJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter CTA -->
+        <section class="newsletter-cta">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to receive exclusive offers, grooming tips, and special promotions.</p>
+                    
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email address" required id="newsletter-email">
+                            <button type="submit" class="btn-primary btn-hover-effect">
+                                Subscribe <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="consent" required>
+                            <label for="consent">I agree to receive marketing emails</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="cta-image">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Subscribe" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <svg viewBox="0 0 200 50" class="logo-svg">
+                        <path class="logo-path" d="M20,10 L40,10 L40,40 L20,40 Z M60,10 L80,10 L80,25 L60,25 Z M100,10 L120,10 L120,40 L100,40 Z" />
+                    </svg>
+                    <p>Premium grooming experiences in the heart of Cape Town.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Haircuts</a></li>
+                            <li><a href="#">Beard Grooming</a></li>
+                            <li><a href="#">Shaves</a></li>
+                            <li><a href="#">Facials</a></li>
+                            <li><a href="#">Packages</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="links-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Barbers</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="links-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cancellation Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Business Hours</h4>
+                    <ul class="business-hours">
+                        <li><span>Mon-Fri:</span> 9:00 AM - 7:00 PM</li>
+                        <li><span>Sat:</span> 8:00 AM - 5:00 PM</li>
+                        <li><span>Sun:</span> 10:00 AM - 3:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 UpTown Barber. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fab fa-cc-amex" title="American Express"></i>
+                    <i class="fab fa-cc-paypal" title="PayPal"></i>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Mobile Bottom Navigation -->
+        <div class="mobile-nav">
+            <a href="#" class="mobile-nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#services" class="mobile-nav-item">
+                <i class="fas fa-cut"></i>
+                <span>Services</span>
+            </a>
+            <a href="#" class="mobile-nav-item book-now-btn">
+                <i class="fas fa-plus-circle"></i>
+                <span>Book Now</span>
+            </a>
+            <a href="#barbers" class="mobile-nav-item">
+                <i class="fas fa-user-tie"></i>
+                <span>Barbers</span>
+            </a>
+            <a href="#" class="mobile-nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Booking Widget -->
+    <div class="booking-widget">
+        <div class="widget-header">
+            <h3>Book Your Appointment</h3>
+            <button class="close-widget" aria-label="Close booking widget">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="widget-steps">
+            <div class="step-indicator active" data-step="1">
+                <span>1</span>
+                <p>Service</p>
+            </div>
+            <div class="step-indicator" data-step="2">
+                <span>2</span>
+                <p>Barber</p>
+            </div>
+            <div class="step-indicator" data-step="3">
+                <span>3</span>
+                <p>Date & Time</p>
+            </div>
+            <div class="step-indicator" data-step="4">
+                <span>4</span>
+                <p>Confirm</p>
+            </div>
+        </div>
+        
+        <div class="widget-content">
+            <!-- Step 1: Service Selection -->
+            <div class="booking-step active" data-step-content="1">
+                <h4>Select Your Service</h4>
+                <div class="service-options">
+                    <div class="service-option active" data-service="Signature Haircut" data-price="350" data-duration="45">
+                        <div class="option-info">
+                            <h5>Signature Haircut</h5>
+                            <p>45 min • R350</p>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                    <div class="service-option" data-service="Royal Beard Treatment" data-price="250" data-duration="30">
+                        <div class="option-info">
+                            <h5>Royal Beard Treatment</h5>
+                            <p>30 min • R250</p>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                    <div class="service-option" data-service="Hot Towel Shave" data-price="300" data-duration="40">
+                        <div class="option-info">
+                            <h5>Hot Towel Shave</h5>
+                            <p>40 min • R300</p>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                    <div class="service-option" data-service="Kids Haircut" data-price="200" data-duration="30">
+                        <div class="option-info">
+                            <h5>Kids Haircut</h5>
+                            <p>30 min • R200</p>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                    <div class="service-option" data-service="Hair Coloring" data-price="450" data-duration="60">
+                        <div class="option-info">
+                            <h5>Hair Coloring</h5>
+                            <p>60 min • R450</p>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                    <div class="service-option" data-service="Gentleman's Facial" data-price="400" data-duration="50">
+                        <div class="option-info">
+                            <h5>Gentleman's Facial</h5>
+                            <p>50 min • R400</p>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Step 2: Barber Selection -->
+            <div class="booking-step" data-step-content="2">
+                <h4>Select Your Barber</h4>
+                <div class="barber-options">
+                    <div class="barber-option active" data-barber="James Wilson">
+                        <div class="barber-image">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="James Wilson">
+                        </div>
+                        <div class="barber-info">
+                            <h5>James Wilson</h5>
+                            <p>Master Barber</p>
+                            <div class="barber-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.8 (210)</span>
+                            </div>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                    
+                    <div class="barber-option" data-barber="Michael Rodriguez">
+                        <div class="barber-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Michael Rodriguez">
+                        </div>
+                        <div class="barber-info">
+                            <h5>Michael Rodriguez</h5>
+                            <p>Beard Specialist</p>
+                            <div class="barber-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>5.0 (187)</span>
+                            </div>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                    
+                    <div class="barber-option" data-barber="David Johnson">
+                        <div class="barber-image">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="David Johnson">
+                        </div>
+                        <div class="barber-info">
+                            <h5>David Johnson</h5>
+                            <p>Classic Cuts Expert</p>
+                            <div class="barber-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>5.0 (156)</span>
+                            </div>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                    
+                    <div class="barber-option" data-barber="Thomas Brown">
+                        <div class="barber-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Thomas Brown">
+                        </div>
+                        <div class="barber-info">
+                            <h5>Thomas Brown</h5>
+                            <p>Modern Styles Specialist</p>
+                            <div class="barber-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>5.0 (134)</span>
+                            </div>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                    
+                    <div class="barber-option" data-barber="Robert Taylor">
+                        <div class="barber-image">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Robert Taylor">
+                        </div>
+                        <div class="barber-info">
+                            <h5>Robert Taylor</h5>
+                            <p>Traditional Barber</p>
+                            <div class="barber-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.7 (98)</span>
+                            </div>
+                        </div>
+                        <div class="option-select">
+                            <button class="btn-outline btn-small btn-hover-effect">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Step 3: Date & Time Selection -->
+            <div class="booking-step" data-step-content="3">
+                <h4>Select Date & Time</h4>
+                <div class="date-time-selection">
+                    <div class="calendar-container">
+                        <div class="calendar-header">
+                            <button class="nav-btn prev-month"><i class="fas fa-chevron-left"></i></button>
+                            <h5 class="current-month">October 2023</h5>
+                            <button class="nav-btn next-month"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            
+                            <!-- Calendar days will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="time-slots-container">
+                        <h5>Available Time Slots</h5>
+                        <div class="time-slots-grid">
+                            <!-- Time slots will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Step 4: Confirmation -->
+            <div class="booking-step" data-step-content="4">
+                <h4>Confirm Your Appointment</h4>
+                <div class="booking-summary">
+                    <div class="summary-item">
+                        <span>Service:</span>
+                        <span id="summary-service">Signature Haircut</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Barber:</span>
+                        <span id="summary-barber">James Wilson</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Date:</span>
+                        <span id="summary-date">October 15, 2023</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Time:</span>
+                        <span id="summary-time">10:00 AM</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Duration:</span>
+                        <span id="summary-duration">45 min</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span id="summary-total">R350</span>
+                    </div>
+                </div>
+                
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="client-name">Full Name</label>
+                        <input type="text" id="client-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client-phone">Phone Number</label>
+                        <input type="tel" id="client-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client-email">Email Address</label>
+                        <input type="email" id="client-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client-notes">Special Requests (Optional)</label>
+                        <textarea id="client-notes" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="widget-footer">
+            <button class="btn-outline btn-hover-effect" id="prev-step" disabled>
+                <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <button class="btn-primary btn-hover-effect" id="next-step">
+                Next <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Gift Card Modal -->
+    <div class="modal-overlay" id="gift-card-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Gift the Perfect Grooming Experience</h3>
+                <button class="close-modal" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="gift-card-options">
+                    <div class="gift-option">
+                        <div class="gift-amount">R250</div>
+                        <p>Beard Treatment</p>
+                        <button class="btn-outline btn-hover-effect select-gift" data-amount="250">Select</button>
+                    </div>
+                    <div class="gift-option popular">
+                        <div class="popular-badge">Best Value</div>
+                        <div class="gift-amount">R500</div>
+                        <p>Haircut + Beard</p>
+                        <button class="btn-primary btn-hover-effect select-gift" data-amount="500">Select</button>
+                    </div>
+                    <div class="gift-option">
+                        <div class="gift-amount">Custom</div>
+                        <p>Any Amount</p>
+                        <button class="btn-outline btn-hover-effect select-gift" data-amount="custom">Select</button>
+                    </div>
+                </div>
+                
+                <div class="gift-card-form" id="gift-card-form">
+                    <div class="form-group">
+                        <label for="gift-amount">Amount (ZAR)</label>
+                        <input type="number" id="gift-amount" min="100" step="50" value="500">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name">Recipient Name</label>
+                        <input type="text" id="recipient-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-email">Recipient Email</label>
+                        <input type="email" id="recipient-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gift-message">Personal Message (Optional)</label>
+                        <textarea id="gift-message" rows="3"></textarea>
+                    </div>
+                    <button class="btn-primary btn-hover-effect" id="purchase-gift-card">Purchase Gift Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal-overlay" id="video-modal">
+        <div class="modal-container video-container">
+            <div class="modal-header">
+                <h3>Our Story</h3>
+                <button class="close-modal" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barber Profile Modal -->
+    <div class="modal-overlay" id="barber-modal">
+        <div class="modal-container barber-profile">
+            <div class="modal-header">
+                <button class="close-modal" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="barber-header">
+                    <div class="barber-image">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Barber" id="barber-profile-image">
+                    </div>
+                    <div class="barber-info">
+                        <h3 id="barber-profile-name">James Wilson</h3>
+                        <p class="specialty" id="barber-profile-specialty">Master Barber / Founder</p>
+                        <div class="barber-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span id="barber-profile-rating">4.8 (210)</span>
+                        </div>
+                        <div class="barber-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="barber-bio">
+                    <h4>About Me</h4>
+                    <p id="barber-profile-bio">With over 15 years of experience in the industry, James founded UpTown Barber with a vision to create a space where traditional barbering meets modern style. His precision cutting techniques and attention to detail have made him one of Cape Town's most sought-after barbers.</p>
+                    
+                    <h4>Specialties</h4>
+                    <ul class="specialties-list" id="barber-specialties">
+                        <li>Precision haircuts</li>
+                        <li>Classic styles</li>
+                        <li>Hot towel shaves</li>
+                        <li>Beard sculpting</li>
+                    </ul>
+                    
+                    <h4>Availability</h4>
+                    <div class="availability">
+                        <div class="day-availability">
+                            <span>Monday</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="day-availability">
+                            <span>Tuesday</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="day-availability">
+                            <span>Wednesday</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="day-availability">
+                            <span>Thursday</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="day-availability">
+                            <span>Friday</span>
+                            <span>9:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="day-availability">
+                            <span>Saturday</span>
+                            <span>8:00 AM - 4:00 PM</span>
+                        </div>
+                        <div class="day-availability">
+                            <span>Sunday</span>
+                            <span>Closed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn-primary btn-hover-effect" id="book-this-barber">Book This Barber</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
